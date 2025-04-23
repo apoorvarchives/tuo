@@ -1,75 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="?android:colorBackground"
-    android:padding="16dp"
-    tools:context=".MainActivity">
 
-    <!-- Top Controls -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="8dp"
-        android:weightSum="1">
-
-        <!-- Back Button -->
-        <ImageButton
-            android:id="@+id/back_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_revert"
-            android:contentDescription="Back"
-            android:background="?android:attr/selectableItemBackground" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <!-- Fullscreen Button -->
-        <ImageButton
-            android:id="@+id/fullscreen_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_view"
-            android:contentDescription="Fullscreen"
-            android:background="?android:attr/selectableItemBackground" />
-    </LinearLayout>
-
-    <!-- Video Title -->
-    <TextView
-        android:id="@+id/titleText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Learn C in 6hrs"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_marginVertical="12dp"
-        android:textColor="@android:color/black" />
-
-    <!-- YouTube Player View -->
-    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-        android:id="@+id/youtube_player_view"
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/darker_gray"
-        android:elevation="4dp"
-        android:clipToOutline="true" />
-
-    <!-- Progress Slider -->
-    <SeekBar
-        android:id="@+id/progress_tracker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="100"
-        android:progress="0" />
 
 </LinearLayout>
